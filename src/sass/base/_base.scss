@@ -18,6 +18,7 @@ section{
     font-size: 24px;
     border: none;
     border-radius: 6px;
+    cursor: pointer;
 }
 .btn-gold{
     background: $linear-gold;  
@@ -26,6 +27,11 @@ section{
     background-color: #F5F5F5;
     border-radius: 77px;
     border: 1px solid $color-gold;
+}
+@media(max-width:1600px){
+        .container{
+            max-width: 1200px;
+        }
 }
 // html{
 //     @include respond(big-screen){

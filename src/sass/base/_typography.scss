@@ -17,3 +17,11 @@ html{
 .light{
     font-weight: 300;
 }
+@media(max-width:1600px){
+    .title-2{
+        font-size: 65px;
+        background: radial-gradient(circle, #add6ff 0, #141e28 11%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}

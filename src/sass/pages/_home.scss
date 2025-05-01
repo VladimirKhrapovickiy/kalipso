@@ -39,7 +39,7 @@
         font-size: 14px;
         border: none;
         border-radius: 52px;
-
+        cursor: pointer;
     }
 }
 .main-screen{
@@ -51,6 +51,7 @@
     flex-direction: column;
     align-items: center;
     gap: 60px;
+
     .title-1{
         text-align: center;
         font-size: 90px;
@@ -465,6 +466,18 @@
         color:  $color-gold;
         justify-self: center;
         align-self: end;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    &__link::after{
+        content: "";
+        width: 15px;
+        height: 15px;
+        background-image: url("../icons/Arrow.svg");
+        display: block;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 .faq{
@@ -670,6 +683,149 @@
         justify-self: center;
     }
 }
-@media(max-width:1920px){
-    
+@media(max-width:1600px){
+    .header{
+        max-width: 1200px;
+    }
+    .header__button{
+        padding:15px 10px; 
+        white-space: nowrap;
+    }
+    .header__menu-item{
+        font-size: 14px;
+    }
+    .header__phone{
+        font-size: 14px;
+    }
+    .header__hours{
+        font-size: 14px;
+    }
+    .social__link {
+        padding: 4px;
+    }
+    .main-screen .title-1{
+        font-size: 80px;
+    }
+    .main-screen {
+        height: 800px;
+    }
+    .kalipso__title-1{
+        font-size: 120px;
+    }
+    .kalipso__title-2 {
+        font-size: 85px;
+    }
+    .kalipso__txt{
+        top: 0;
+        font-size: 14px;
+        max-width: 250px;
+    }
+    .kalipso__advantage-img{
+        min-width: 250px;
+        height: 140px;
+    }
+    .kalipso__advantage-name{
+        font-size: 18px;
+    }
+    .kalipso__advantage-txt{
+        font-size: 16px;
+    }
+    .kalipso__right-txt{
+        font-size: 20px;
+    }
+    .features .yacht-descrption__tab{
+        font-size: 22px;
+        padding: 22px 90px;
+    }
+    .features .yacht-descrption__card{
+        max-width: 350px;
+    }
+    .features .yacht-descrption__name{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .features .yacht-descrption__txt{
+        font-size: 18px;
+    }
+    .card__title-1{
+        font-size: 65px;
+    }
+    .card__title-2{
+        font-size: 90px;
+    }
+    .card__text{
+        font-size: 22px;
+    }
+    .card__cta{
+        font-size: 18px;
+    }
+    .card__img{
+        width: 100%;
+    }
+    .clients__txt{
+        font-size: 22px;
+    }
+    .review__name {
+        font-size: 22px;
+    }
+    .review__event {
+        font-size: 16px;
+    }
+    .review__text{
+        font-size: 16px;
+    }
+    .review__link{
+        font-size: 16px ;
+    }
+    .review {
+        max-width: 370px;
+    }
+    .faq__title{
+        font-size: 55px;
+    }
+    .faq__subtitle{
+        font-size: 50px;
+    }
+    .faq__left{
+        max-width: 580px;
+    } 
+    .faq .services__item-name{
+        font-size: 18px;
+    }
+    .services__item-text{
+        font-size: 16px;
+    }
+    .services__list {
+        max-width: 580px;
+    }
+    .faq__rigth{
+        max-width: 580px;
+    }
+    .contacts__subtitle{
+        font-size: 24px;
+    }
+    .contacts__name{
+        font-size: 24px;
+    }
+    .contacts__adress{
+        font-size: 24px;
+    }
+    .contacts__left{
+        max-width: 580px;
+    }
+    .footer__text{
+        font-size: 16px;
+    }
+    .footer__menu{
+        font-size: 16px;
+    }
+    .footer__logo{
+        width: 180px;
+    }
+    .footer__policy{
+        font-size: 12px;
+    }
+    .footer__rights{
+        font-size: 12px;
+    }
 }
