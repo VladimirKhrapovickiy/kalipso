@@ -1,0 +1,43 @@
+
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    width: 100%;
+}
+section{
+    margin-bottom: 120px;
+}
+.btn{
+    color: $color-blue;
+    padding: 32px 64px;
+    font-size: 24px;
+    border: none;
+    border-radius: 6px;
+}
+.btn-gold{
+    background: $linear-gold;  
+}
+.btn-gray{
+    background-color: #F5F5F5;
+    border-radius: 77px;
+    border: 1px solid $color-gold;
+}
+// html{
+//     @include respond(big-screen){
+//         font-size: 110%;
+//     }
+//     @include respond(tab-lend){
+//         font-size: 90%;
+//     }
+//     @include respond(tab-port){
+//         font-size: 80%;
+//     }
+//     @include respond(phone){
+//         font-size: 70%;
+//     }
+// }

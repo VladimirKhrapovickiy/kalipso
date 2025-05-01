@@ -1,0 +1,19 @@
+
+html{
+        font-family: 'Montserrat';
+        color: $color-black;
+}
+.title-2{
+    font-size: 80px;
+    font-family: 'Anticva';
+    background: $radial-blue;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: fit-content;
+}
+.bold{
+    font-weight: 500;
+}
+.light{
+    font-weight: 300;
+}

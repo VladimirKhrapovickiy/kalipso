@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/index.js"
+></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/styles.css"
+/>
+</head>
+<body>
+    <header class="header">
+        <img src="./img/logo.png" alt="логотип" class="header__logo">
+        <nav class="header__menu">
+            <ul class="header__menu-list">
+                <li class="header__menu-item">Главная</li>
+                <li class="header__menu-item">О яхте</li>
+                <li class="header__menu-item">Услуги</li>
+                <li class="header__menu-item">Ресторан Мишель</li>
+                <li class="header__menu-item">Бар Кусто</li>
+            </ul>
+        </nav>
+        <div class="social">
+            <a href="#" class="social__link">
+                <img src="./icons/telegram.svg" alt="" class="social__ico">
+            </a>
+            <a href="#" class="social__link">
+                <img src="./icons/Vk.svg" alt="" class="social__ico">
+            </a>
+            <a href="#" class="social__link">
+                <img src="./icons/Whatsapp.svg" alt="" class="social__ico">
+            </a>
+        </div>
+        <div class="header__contact">
+            <span class="header__phone">+7 (903) 402-77-75</span>
+            <span class="header__hours">Ежедневно с 09:00-21:00</span>
+        </div>
+        <button class="header__button">Заказать звонок</button>
+    </header>
+    <main>
+        <section class="main-screen" style="background-image: url(./img/main-screen.png);">
+            <h1 class="title-1">Мероприятия на яхте премиум класса</h1>
+            <button class="btn btn-gold">Забронировать яхту</button>
+        </section>
+
+        <section class="kalipso">
+            <div class="container">
+                <div class="kalipso__left">
+                    <h2 class="kalipso__title-1 title-2">Яхта</h2>
+                    <h2 class="kalipso__title-2 title-2">калипсо</h2>
+                    <p class="kalipso__txt">ультрасовременное судно, одна из самых больших и современных прогулочных яхт классического вида.</p>
+                    <ul class="kalipso__advantages">
+                        <li class="kalipso__advantage">
+                            <img src="./img/adv-1.png" alt="" class="kalipso__advantage-img">
+                            <span class="kalipso__advantage-name">Особый комфорт: </span>
+                            <p class="kalipso__advantage-txt">Элегантный дизайн, уютная атмосфера и комфорт высокого уровня.</p>
+                        </li>
+                        <li class="kalipso__advantage">
+                            <img src="./img/adv-2.png" alt="" class="kalipso__advantage-img">
+                            <span class="kalipso__advantage-name">Запоминающийся облик: </span>
+                            <p class="kalipso__advantage-txt">Внешний вид яхты выполнен в стиле современной моторной яхты, гармонирующей с речными пейзажами.</p>
+                        </li>
+                        <li class="kalipso__advantage">
+                            <img src="./img/adv-3.png" alt="" class="kalipso__advantage-img">
+                            <span class="kalipso__advantage-name">Просторные палубы: </span>
+                            <p class="kalipso__advantage-txt">Три палубы открывают безграничные возможности для организации мероприятий.  </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="kalipso__right">
+                    <img src="./img/about_jaht.png" alt="" class="kalipso__img">
+                    <p class="kalipso__right-txt">Яхта — идеальное место для проведения многолюдных мероприятий: свадеб, выпускных, корпоративов, конференций и других торжеств.  </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+                <div class="container">
+                    <h2 class="title-2">особенности яхты</h2>
+                    <div class="yacht-descrption">
+                        <div class="yacht-descrption__tabs">
+                            <div data-display="display-1" class="yacht-descrption__tab tab-1 tab-active">Главная палуба</div>
+                            <div data-display="display-2" class="yacht-descrption__tab tab-2">Средняя палуба</div>
+                            <div data-display="display-3" class="yacht-descrption__tab tab-3">Прогулочная палуба</div>
+                        </div>
+                        <div class="yacht-descrption__displays">
+                            <div class="yacht-descrption__display display-1 display-active">
+                                <div class="yacht-descrption__card">
+                                    <img src="./icons/table.png" alt="" class="yacht-descrption__icon">
+                                    <span class="yacht-descrption__name">Просторный банкетный зал: </span>
+                                    <p class="yacht-descrption__txt">Идеальное место для торжественных мероприятий.</p>
+                                </div>
+                                <div class="yacht-descrption__card ">
+                                    <img src="./icons/cook.png" alt="" class="yacht-descrption__icon">
+                                    <span class="yacht-descrption__name">Современная кухня-камбуз: </span>
+                                    <p class="yacht-descrption__txt">Блюда готовятся непосредственно на борту и сразу подаются гостям.  </p>
+                                </div>
+                                <div class="yacht-descrption__card">
+                                    <img src="./icons/chairs.png" alt="" class="yacht-descrption__icon">
+                                    <span class="yacht-descrption__name">Индивидуальная расстановка мебели: </span>
+                                    <p class="yacht-descrption__txt">Возможность адаптировать пространство под ваши нужды.  </p>
+                                </div>
+                            </div>
+                            <div class="yacht-descrption__display display-2">
+                                <div class="yacht-descrption__card">
+                                    <img src="./icons/table.png" alt="" class="yacht-descrption__icon">
+                                    <span class="yacht-descrption__name">Этот экран для средней </span>
+                                    <p class="yacht-descrption__txt">Идеальное место для торжественных мероприятий.</p>
+                                </div>
+                                <div class="yacht-descrption__card ">
+                                    <img src="./icons/cook.png" alt="" class="yacht-descrption__icon">
+                                    <span class="yacht-descrption__name">Современная кухня-камбуз: </span>
+                                    <p class="yacht-descrption__txt">Блюда готовятся непосредственно на борту и сразу подаются гостям.  </p>
+                                </div>
+                                <div class="yacht-descrption__card">
+                                    <img src="./icons/chairs.png" alt="" class="yacht-descrption__icon">
+                                    <span class="yacht-descrption__name">Индивидуальная расстановка мебели: </span>
+                                    <p class="yacht-descrption__txt">Возможность адаптировать пространство под ваши нужды.  </p>
+                                </div>
+                            </div>
+                            <div class="yacht-descrption__display display-3">
+                                <div class="yacht-descrption__card">
+                                    <img src="./icons/table.png" alt="" class="yacht-descrption__icon">
+                                    <span class="yacht-descrption__name">Этот экран для прогулочной: </span>
+                                    <p class="yacht-descrption__txt">Идеальное место для торжественных мероприятий.</p>
+                                </div>
+                                <div class="yacht-descrption__card ">
+                                    <img src="./icons/cook.png" alt="" class="yacht-descrption__icon">
+                                    <span class="yacht-descrption__name">Современная кухня-камбуз: </span>
+                                    <p class="yacht-descrption__txt">Блюда готовятся непосредственно на борту и сразу подаются гостям.  </p>
+                                </div>
+                                <div class="yacht-descrption__card">
+                                    <img src="./icons/chairs.png" alt="" class="yacht-descrption__icon">
+                                    <span class="yacht-descrption__name">Индивидуальная расстановка мебели: </span>
+                                    <p class="yacht-descrption__txt">Возможность адаптировать пространство под ваши нужды.  </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="yacht-descrption__slider">
+                            <div class="swiper">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                  <!-- Slides -->
+                                  <div class="swiper-slide"><img src="./img/slider-1.png" alt=""></div>
+                                  <div class="swiper-slide"><img src="./img/slider-1.png" alt=""></div>
+                                  <div class="swiper-slide"><img src="./img/slider-1.png" alt=""></div>
+                                  ...
+                                </div>
+                                <!-- If we need pagination -->
+                                <div class="swiper-pagination"></div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="before-after">
+            <div class="container">
+                <h2 class="title-2">Интерьер / экстерьер</h2>
+                <img-comparison-slider>
+                    <img class="before-after__img" slot="first" src="./img/before.png" />
+                    <img class="before-after__img" slot="second" src="./img/after.png" />
+                    <img class="before-after__handle"  slot="handle" src="./img/before-after-divider.png" alt="">
+                </img-comparison-slider>
+                <a href="" class="btn btn-gray before-after__btn-1">Смотреть весь интерьер</a>
+                <a href="" class="btn btn-gray before-after__btn-2">Смотреть весь экстерьер</a>
+            </div>
+        </section>
+        <section class="video">
+            <div class="container">
+                <img src="./img/video.png" alt="">
+            </div>
+        </section>
+
+        <section class="events">
+            <div class="container">
+                <div class="event events__first">
+                    <h2 class="title-2 events__title">События на нашей яхте</h2>
+                    <p class="events__text">Регулярно на нашей яхте происходят события, в которых вы можете принять участие</p>
+                    <p class="events__clue">*Нажмите на событие, чтобы посмотреть фото</p>
+                </div>
+                <div class="event" style="background-image: url('./img/event-1.png');">
+                    <p class="event__date">20 мая 2025</p>
+                    <p class="event__name">Событие ожидается</p>
+                    <p class="event__desc">Оно будет незабываемым, обязательно приходите</p>
+                    <p class="event__sub">Запись на событие у менеджера</p>
+                </div>
+                <div class="event" style="background-image: url('./img/event-2.png');">
+                    <p class="event__date">20 мая 2025</p>
+                    <p class="event__name">Событие ожидается</p>
+                    <p class="event__desc">Оно будет незабываемым, обязательно приходите</p>
+                    <p class="event__sub">Запись на событие у менеджера</p>
+                </div>
+                <div class="event" style="background-image: url('./img/event-1.png');">
+                    <p class="event__date">20 мая 2025</p>
+                    <p class="event__name">Джаз на яхте</p>
+                    <p class="event__desc">Живая джазовая музыка, танцы, фуршет и всё это на палубе яхты «Калипсо»</p>
+                    <p class="event__sub">Запись на событие у менеджера</p>
+                </div>
+                <div class="event" style="background-image: url('./img/event-2.png');">
+                    <p class="event__date">20 мая 2025</p>
+                    <p class="event__name">Событие ожидается</p>
+                    <p class="event__desc">Оно будет незабываемым, обязательно приходите</p>
+                    <p class="event__sub">Запись на событие у менеджера</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <div class="container">
+                <div class="card__left">
+                    <h2 class="title-2 card__title-1">Клубная карта</h2>
+                    <h2 class="title-2 title-eric card__title-2">Калипсо</h2>
+                    <p class="card__text">При организации первого мероприятия на яхте вы становитесь обладателем клубной накопительной карты.</p>
+                    <p class="card__cta">Оставьте заявку на бронь яхты и мы перезвоним вам в ближайшее время для обсуждения деталей</p>
+                    <button class="btn btn-gold">Забронировать яхту</button>
+                </div>
+                <div class="card__right">
+                    <img src="./img/club-card.png" alt="" class="card__img">
+                </div>
+            </div>
+        </section>
+
+        <section class="clients">
+            <div class="container">
+                <h2 class="title-2">наши клиенты </h2>
+                <p class="clients__txt">проводят на яхте самые важные события и <strong>остаются довольны</strong></p>
+                <div class="clients__reviews">
+                    <div class="review">
+                        <div class="review__top">
+                            <img src="./img/review-1.png" alt="" class="review__img">
+                            <p class="review__name">Андрей и Анна</p>
+                            <p class="review__event">Свадьба на яхте</p>
+                        </div>
+                        <p class="review__text">Мы с мужем давно мечтали о необычной свадьбе, и организация торжества на яхте превзошла все ожидания! С самого начала менеджеры проявили профессионализм: помогли выбрать идеальную яхту, продумали маршрут и учли все наши пожелания.
+                            Качество обслуживания на высшем уровне: вкуснейший кейтеринг, внимательный экипаж и безупречная организация
+                            Особенно хочется отметить работу ведущего и фотографа – они сделали наш праздник по-настоящему живым и незабываемым. Кадры получились потрясающие!</p>
+                        <a class="review__link">Читать весь отзыв на Яндекс</a>
+                    </div>
+                    <div class="review">
+                        <div class="review__top">
+                            <img src="./img/review-2.png" alt="" class="review__img">
+                            <p class="review__name">ООО «Антара»</p>
+                            <p class="review__event">Бизнес мероприятие</p>
+                        </div>
+                        <p class="review__text">
+                            Наша компания провела ежегодное мероприятие на роскошной яхте, и это был один из самых впечатляющих и запоминающихся ивентов за всю историю нашей команды! Само мероприятие прошло на безупречном уровне. 
+                        </p>
+                        <p class="review__text">
+                        Особые слова благодарности – за техническое оснащение: презентация прошла без единого сбоя, а зоны для нетворкинга и фуршета были организованы с учетом комфорта каждого гостя.
+                        Наша команда уже планирует следующее событие именно в этом формате!
+                        </p>
+                        <a class="review__link">Читать весь отзыв на Яндекс</a>
+                    </div>
+                    <div class="review">
+                        <div class="review__top">
+                            <img src="./img/review-3.png" alt="" class="review__img">
+                            <p class="review__name">Александра</p>
+                            <p class="review__event">День рождения</p>
+                        </div>
+                        <p class="review__text">Мы решили отметить День Рождения ребенка и собрать близких друзей на премиальной яхте – и это было лучшее решение! Организаторы предложили идеальный формат, который объединил детский праздник и взрослый фуршет в одном стильном мероприятии.
+                            Аниматоры в костюмах пиратов и принцесс, квест с поиском «сокровищ», аквагрим и даже детский фуршет 
+                            Пока дети развлекались, гости наслаждались изысканными канапе, просекко и живой музыкой на палубе.</p>
+                        <a class="review__link">Читать весь отзыв на Яндекс</a>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-gold clients__btn">Читать остальные отзывы на Яндекс.картах</button>
+            <img src="./img/yandex.png" alt="" class="clients__yandex">
+        </section>
+
+        <section class="faq">
+            <div class="container">
+                <div class="faq__left">
+                    <h2 class="title-2 faq__title">Частые вопросы</h2>
+                    <span class="faq__subtitle">про яхту «Калипсо»</span>
+                    <p class="faq__call-txt">Если у вас есть дополнительный вопрос, которого нет в списке, напишите нашему менеджеру</p>
+                    <button class="btn btn-gold">Задать вопрос</button>
+                </div>
+                <div class="faq__rigth">
+                    <ul class="services__list">
+                            <li class="services__item services__item-active">
+                                <span class="services__item-name">Разрешено ли украшать яхту?</span>
+                                <p class="services__item-text">Да, для бронирования требуется предоплата 20-50%. Полная оплата — за 3-7 дней до мероприятия.</p>
+                                <span class="services__item-plus">-</span>
+                            </li>
+                            <li class="services__item ">
+                                <span class="services__item-name">Есть ли развлечения на борту?</span>
+                                <p class="services__item-text">Да, для бронирования требуется предоплата 20-50%. Полная оплата — за 3-7 дней до мероприятия.</p>
+                                <span class="services__item-plus">+</span>
+                            </li>
+                            <li class="services__item ">
+                                <span class="services__item-name">Какой маршрут прогулки можно выбрать?</span>
+                                <p class="services__item-text">Да, для бронирования требуется предоплата 20-50%. Полная оплата — за 3-7 дней до мероприятия.</p>
+                                <span class="services__item-plus">+</span>
+                            </li>
+                            <li class="services__item ">
+                                <span class="services__item-name">Что входит в стоимость аренды?</span>
+                                <p class="services__item-text">Да, для бронирования требуется предоплата 20-50%. Полная оплата — за 3-7 дней до мероприятия.</p>
+                                <span class="services__item-plus">+</span>
+                            </li>
+                            <li class="services__item ">
+                                <span class="services__item-name">Нужно ли вносить депозит?</span>
+                                <p class="services__item-text">Да, для бронирования требуется предоплата 20-50%. Полная оплата — за 3-7 дней до мероприятия.</p>
+                                <span class="services__item-plus">+</span>
+                            </li>
+                            <li class="services__item ">
+                                <span class="services__item-name">Что делать при плохой погоде?</span>
+                                <p class="services__item-text">Да, для бронирования требуется предоплата 20-50%. Полная оплата — за 3-7 дней до мероприятия.</p>
+                                <span class="services__item-plus">+</span>
+                            </li>
+                        </ul>
+                    <!-- <ul class="faq__list">
+                        <li class="faq__item">
+                            <p class="faq__question">Разрешено ли украшать яхту?</p>
+                            <p class="faq__answer">Да, для бронирования требуется предоплата 20-50%. Полная оплата — за 3-7 дней до мероприятия.</p>
+                        </li>
+                        <li class="faq__item">
+                            <p class="faq__question">Есть ли развлечения на борту?</p>
+                            <p class="faq__answer">Да, для бронирования требуется предоплата 20-50%. Полная оплата — за 3-7 дней до мероприятия.</p>
+                        </li>
+                        <li class="faq__item">
+                            <p class="faq__question">Какой маршрут прогулки можно выбрать?</p>
+                            <p class="faq__answer">Да, для бронирования требуется предоплата 20-50%. Полная оплата — за 3-7 дней до мероприятия.</p>
+                        </li>
+                        <li class="faq__item">
+                            <p class="faq__question">Что входит в стоимость аренды?</p>
+                            <p class="faq__answer">Да, для бронирования требуется предоплата 20-50%. Полная оплата — за 3-7 дней до мероприятия.</p>
+                        </li>
+                        <li class="faq__item faq__item-active">
+                            <p class="faq__question">Нужно ли вносить депозит?</p>
+                            <p class="faq__answer">Да, для бронирования требуется предоплата 20-50%. Полная оплата — за 3-7 дней до мероприятия.</p>
+                        </li>
+                        <li class="faq__item">
+                            <p class="faq__question">Что делать при плохой погоде?</p>
+                            <p class="faq__answer">Да, для бронирования требуется предоплата 20-50%. Полная оплата — за 3-7 дней до мероприятия.</p>
+                        </li>
+                    </ul> -->
+                </div>
+            </div>
+
+        </section>
+
+        <section class="contacts">
+            <div class="container">
+                <div class="contacts__left">
+                    <h2 class="title-2">Контакты</h2>
+                    <p class="contacts__subtitle">Местонахождение яхты</p>
+                    <p class="contacts__name">ООО «СУДОХОДНАЯ КОМПАНИЯ «ДОНТУР»</p>
+                    <p class="contacts__adress">344002, г. Ростов-на-Дону, ул. Береговая, 12, стр.3, помещение 2</p>
+                    <button class="btn btn-gold contacts__btn">Проложить маршут к Яхте</button>
+                </div>
+                <div class="contacts__right">
+                    <img src="./img/map.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <img src="./img/logo__footer.png" alt="" class="footer__logo">
+            <div class="footer__text">
+                <p>Яхта «Калипсо» — самая лучшая яхта в акватории Азовского моря</p>
+                <p>ИНН 6164260129, КПП 616401001, ОГРН 1076164000758</p>
+            </div>
+            <div class="footer__menu">
+                <a href="" class="footer__menu-link bold">Главная</a>
+                <a href="" class="footer__menu-link bold">О яхте</a>
+                <div class="footer__menu-list">
+                    <a href="" class="footer__menu-link bold">Ресторан на яхте</a>
+                    <a href="" class="footer__menu-link">Ресторан Мишель</a>
+                    <a href="" class="footer__menu-link">Бар Кусто</a>
+                </div>
+                <div class="footer__menu-list">
+                    <a href="" class="footer__menu-link bold">Услуги</a>
+                    <a href="" class="footer__menu-link">Дни рождения</a>
+                    <a href="" class="footer__menu-link">Свадьбы</a>
+                    <a href="" class="footer__menu-link">Бизнес-мероприятия</a>
+                    <a href="" class="footer__menu-link">Часовые прогулки</a>
+                </div>
+            </div>
+            <div class="footer__contact">
+                <span class="footer__phone">+7 (903) 402-77-75</span>
+                <span class="footer__hours light">Ежедневно с 09:00-21:00</span>
+            </div>
+            <a href="" class="footer__policy">Политика конфиденциальности</a>
+            <div class="social">
+                <a href="#" class="social__link">
+                    <img src="./icons/telegram.svg" alt="" class="social__ico">
+                </a>
+                <a href="#" class="social__link">
+                    <img src="./icons/Vk.svg" alt="" class="social__ico">
+                </a>
+                <a href="#" class="social__link">
+                    <img src="./icons/Whatsapp.svg" alt="" class="social__ico">
+                </a>
+            </div>
+            <p href="" class="footer__rights">2025 Все права защищены</a>
+        </div>
+    </footer>
+<script src="js/main.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Anticva';
+    font-style: normal;
+    font-weight: 400;
+    src:  local("Anticva"),
+    url('../fonts/Anticva-Regular.otf') format('otf');
+}
+@font-face {
+    font-family: 'Ouvality';
+    font-style: normal;
+    font-weight: 400;
+    src:  local("Ouvality"),
+    url('../fonts/Ouvality.ttf');
+}
+@import "./reset.scss";
+@import "./abstract/functions";
+@import "./abstract/mixins";
+@import "./abstract/variables";
+
+@import "./base/base";
+@import "./base/typography";
+@import "./base/utilities";
+@import "./base/animations";
+
+@import "./layout/header";
+@import "./layout/navigation";
+@import "./layout/sidebar.scss";
+@import "./layout/footer";
+
+
+@import "./pages/home";
