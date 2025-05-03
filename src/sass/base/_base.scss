@@ -33,6 +33,29 @@ section{
             max-width: 1200px;
         }
 }
+@media(max-width:1200px){
+    .container{
+        max-width: 900px;
+    }
+    .btn{
+        padding: 20px 40px;
+        font-size: 16px;
+    }
+    
+}
+@media(max-width:900px){
+    .container{
+        max-width: 95%;
+    }
+}
+@media(max-width: 575px){
+    .container{
+        max-width: 90%;
+    }
+    .title-2{
+        font-size: 33px;
+    }
+}
 // html{
 //     @include respond(big-screen){
 //         font-size: 110%;

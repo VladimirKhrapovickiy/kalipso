@@ -1,4 +1,14 @@
 $(document).ready(function() {
+    //мобильное меню
+    const $mobileMenu = $(".mobile-menu");
+    const $burger = $(".header__burger");
+    const $btnExit = $(".mobile-menu__exit")
+    $burger.on("click", ()=>{
+      $mobileMenu.toggleClass("mobile-menu-active")
+    })
+    $btnExit.on("click", ()=>{
+      $mobileMenu.toggleClass("mobile-menu-active")
+    })
     //слайдер
     const swiper = new Swiper('.swiper', {
         // Optional parameters
