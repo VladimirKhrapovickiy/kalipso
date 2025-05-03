@@ -1,6 +1,6 @@
 
 html{
-        font-family: 'Montserrat';
+        font-family: 'Mont';
         color: $color-black;
 }
 .title-2{
@@ -10,12 +10,16 @@ html{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     width: fit-content;
+    font-weight: 400;
 }
 .bold{
     font-weight: 500;
 }
 .light{
     font-weight: 300;
+}
+.title-eric{
+    font-family: 'sonyericssonlogo';
 }
 @media(max-width:1600px){
     .title-2{
@@ -28,5 +32,10 @@ html{
 @media(max-width:1200px){
     .title-2{
         font-size: 45px;
+    }
+}
+@media(max-width:575px){
+    .title-2{
+        font-size: 33px;
     }
 }

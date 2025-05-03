@@ -1,4 +1,7 @@
 
+body{
+    position: relative;
+}
 .header{
     background-color: $color-white;
     display: flex;
@@ -101,6 +104,7 @@
         background: radial-gradient(circle, #2f6397 0, #141e28 35%);;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        font-weight: 400;
     }
 }
 .kalipso{
@@ -121,6 +125,7 @@
         font-size: 138px;
         letter-spacing: 22px;
         text-transform: uppercase;
+        font-family: 'sonyericssonlogo';
     }
     &__left  .kalipso__right{
         display: none;
@@ -247,6 +252,7 @@
         }
         &__name{
             font-size: 26px;
+            font-weight: 700;
         }
         &__txt{
             font-size: 24px;
@@ -283,6 +289,9 @@
     }
     .title-2{
         margin-bottom: 50px;
+    }
+    &__mobile{
+        display: none;
     }
     &__img{
         width: 100%;
@@ -372,7 +381,9 @@
         scrollbar-color: $color-gold transparent;
         scrollbar-width: 23px;
     }
-
+    .events__first-mobile{
+        display: none;
+    }
     &__first{
         background-image: url("../../img/events-bg.png");
         background-repeat: no-repeat;
@@ -422,6 +433,7 @@
     &__title-2{
         font-size: 138px;
         margin-bottom: 35px;
+        text-transform: uppercase;
     }
     &__text{
         font-size: 30px;
@@ -493,7 +505,7 @@
     &__name{
         margin-top: 15px;
         font-size: 30px;
-        font-weight: 500;
+        font-weight: 700;
     }
     &__event{
         color:#002646;
@@ -786,7 +798,7 @@
     }
     .features .yacht-descrption__name{
         font-size: 20px;
-        font-weight: 500;
+        font-weight: 700;
     }
     .features .yacht-descrption__txt{
         font-size: 18px;
@@ -1198,6 +1210,9 @@
     .kalipso__title-1 .title-2{
         font-size: 65px;
     }
+    .kalipso__title-2{
+        letter-spacing: 16px;
+    }
     .kalipso__txt{
         text-align: center;
     }
@@ -1235,10 +1250,10 @@
     }
     .features .yacht-descrption__tab{
         font-size: 8px;
-        padding: 13px 35px;
+        padding: 10px 28px;
     }
     .features .yacht-descrption .tab-2, .features .yacht-descrption .tab-3{
-        margin-left: -30px;
+        margin-left: -24px;
     }
     .features .yacht-descrption{
         gap:30px;
@@ -1247,5 +1262,121 @@
         width: 52px;
         height: 52px;
         margin-bottom: 10px;
+    }
+    .features .yacht-descrption__card {
+        max-width: 300px;
+    }
+    .yacht-descrption__txt{
+        text-align: center;
+    }
+    .yacht-descrption__name{
+        text-align: center;
+    }
+    .before-after .container{
+        display: none;
+    }
+    .before-after .before-after__mobile{
+        display: flex;
+        flex-direction: column;
+        gap: 57px;
+    }
+    .before-after__img-1{
+        position: relative;
+    }
+    .before-after .btn{
+        width: 220px;
+        left:50%;
+        transform: translateX(-50%) translateY(50%);
+    }
+    .video .container{
+        padding: 15px 12px 40px;
+        border-radius: 20px;
+    }
+    .events .events__first-mobile{
+        display: block;
+        max-width: 90%;
+        margin: 0 auto;
+        margin-bottom: 21px;
+        padding: 31px 60px 37px 17px;
+        .title-2{
+            max-width: 248px;
+        }
+    }
+    .events .container .events__first{
+        display: none;
+    }
+    .events__text{
+        margin-bottom: 103px;
+    }
+    .event {
+        height: 450px;
+    }
+    .events .container .event{
+        width: 185px;
+        height: 251px;
+        background-size:contain;
+        padding-left: 14px;
+        padding-bottom: 14px;
+    }
+    .event__date{
+        font-size: 7px;
+        padding: 4px 7px;
+        margin-bottom: 7px;
+    }
+
+    .event__name{
+        font-size: 9px;
+    }
+    .event__desc{
+        font-size: 8px;
+    }
+    .event__sub{
+        font-size: 6px;
+    }
+    .card__title-1{
+        font-size: 33px;
+        margin-bottom: 18px;
+    }
+    .card__title-2{
+        font-size: 59px;
+        margin-bottom: 15px;
+    }
+    .review__name{
+        margin-top: 0;
+    }
+    .clients__btn{
+        max-width: 245px;
+        font-size: 12px;
+    }
+    .clients__yandex{
+        display: none;
+    }
+    .faq__left{
+        padding: 18px;
+    }
+    .faq__subtitle {
+        font-size: 34px;
+    }
+    .faq__call-txt{
+        font-size: 12px;
+        max-width: 236px;
+    }
+    .faq .services__item-plus {
+        font-size: 30px;
+        top: 34px;
+    }
+    .contacts__left{
+        .title-2{
+            margin-bottom: 19px;
+        }
+        .contacts__subtitle{
+            margin-bottom: 29px;
+        }
+        .contacts__name, .contacts__adress{
+            text-align: center;
+        }
+    }
+    .footer__text{
+        text-align: center;
     }
 }

@@ -3,7 +3,7 @@
     font-style: normal;
     font-weight: 400;
     src:  local("Anticva"),
-    url('../fonts/Anticva-Regular.otf') format('otf');
+    url('../fonts/Anticva-Regular.otf');
 }
 @font-face {
     font-family: 'Ouvality';
@@ -11,6 +11,27 @@
     font-weight: 400;
     src:  local("Ouvality"),
     url('../fonts/Ouvality.ttf');
+}
+@font-face {
+    font-family: 'sonyericssonlogo';
+    font-style: normal;
+    font-weight: 400;
+    src:  local("sonyericssonlogo"),
+    url('../fonts/sonyericssonlogo.ttf');
+}
+@font-face {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 400;
+    src:  local("MontRegular"),
+    url('../fonts/MontRegular.ttf');
+}
+@font-face {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 700;
+    src:  local("MontBold"),
+    url('../fonts/MontBold.ttf');
 }
 @import "./reset.scss";
 @import "./abstract/functions";
